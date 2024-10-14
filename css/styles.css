@@ -1,0 +1,157 @@
+:root {
+  --font-family: "Inter", sans-serif;
+  --btncolor: #448c74;
+  --btncolor-hover: #37715d;
+  --background: #858c97;
+  --icon-color: #edcb50;
+  --text: #434a57;
+}
+body {
+  background-color: #f6f9fc;
+  font-family: var(--font-family);
+}
+.container {
+  width: 100%;
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #fff;
+  background-color: var(--btncolor);
+  cursor: pointer;
+  font-weight: 600;
+}
+.btn:hover {
+  background-color: var(--btncolor-hover);
+}
+
+/* header start */
+.header {
+  display: flex;
+  gap: 50px;
+  padding: 8px;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text);
+}
+.header .header-link {
+  display: flex;
+  gap: 7px;
+  font-size: 22px;
+  font-weight: bold;
+}
+.header .header-logo {
+  fill: var(--btncolor);
+}
+.header .navbar {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  justify-content: flex-end;
+}
+.header .navbar-menu {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.navbar-link {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text);
+}
+.navbar-item:hover {
+  color: var(--btncolor);
+}
+.button-container {
+  padding-left: 500px;
+}
+.header .btn i {
+  margin-right: 8px;
+  font-size: 18px;
+}
+/* header end */
+
+/* section hero start*/
+.hero {
+  display: flex;
+  gap: 100px;
+  padding: 100px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero-container {
+  max-width: 500px;
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+}
+.hero .hero-title {
+  font-size: 65px;
+  font-weight: 600;
+}
+.hero .hero-content {
+  color: var(--text);
+  font-size: 18px;
+}
+.inputBox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 18px 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+}
+.inputBox i {
+  position: absolute;
+  left: 15px;
+  color: var(--background);
+  font-size: 18px;
+}
+
+/* Input styling */
+.inputBox input {
+  padding-left: 35px;
+  padding-right: 90px;
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 16px;
+}
+.inputBox input::placeholder {
+  color: #aaa;
+  opacity: 0.7;
+}
+
+/* Button styling */
+.inputBox .btn {
+  position: absolute;
+  right: 12px;
+  border-radius: 10px;
+  padding: 12px 12px;
+}
+
+/* section hero end*/
+
+/* statistics start */
+.statistics {
+  display: flex;
+  background-color: #fff;
+  border-radius: 40px;
+  padding: 80px 150px;
+  justify-content: space-between;
+}
+.stat-number {
+  font-weight: 600;
+  color: var(--btncolor);
+  font-size: 50px;
+}
+.stat-description {
+  color: var(--text);
+}
