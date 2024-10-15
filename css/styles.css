@@ -5,6 +5,7 @@
   --background: #858c97;
   --icon-color: #edcb50;
   --text: #434a57;
+  --text2: #576071;
 }
 
 body {
@@ -18,7 +19,6 @@ body {
   width: 100%;
   max-width: 1350px;
   margin: 0 auto;
-  padding: 0 20px;
 }
 .btn {
   display: inline-block;
@@ -229,4 +229,69 @@ body {
 
 .service-item:hover .service-description {
   color: #ccc;
+}
+/* industries section start */
+.industries-header {
+  text-align: center;
+}
+.industries-title {
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+.industries-description {
+  font-size: 16px;
+  color: var(--text2);
+}
+.industries-image img {
+  border-radius: 30px;
+  border-bottom-right-radius: 0;
+}
+.industries-container {
+  display: flex;
+  gap: 20px;
+}
+.industries-wrapper {
+  border-radius: 30px;
+  background-color: #fff;
+  max-width: 450px;
+  margin-top: 35px;
+}
+.industries-content {
+  padding: 40px;
+}
+.industries-subtitle {
+  font-size: 24px;
+  padding-bottom: 10px;
+  font-weight: 500;
+}
+.industries-list {
+  line-height: 30px;
+}
+.industries-item {
+  color: var(--text2);
+}
+.industries-item::before {
+  content: "•";
+  color: var(--text2);
+  font-size: 20px;
+  display: inline-block;
+  width: 10px;
+  margin-right: 10px;
+}
+.industries-btn {
+  padding: 15px 30px;
+  text-align: center;
+  margin: 15px 0;
+}
+/* clients section start */
+.clients-header {
+  text-align: center;
+}
+.clients-title {
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+.clients-description {
+  font-size: 16px;
+  color: var(--text2);
 }
