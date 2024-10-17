@@ -69,7 +69,10 @@ body {
   font-weight: 500;
   color: var(--text);
 }
-.navbar-item:hover {
+.navbar-link:hover {
+  color: var(--btncolor);
+}
+.navbar .active {
   color: var(--btncolor);
 }
 .button-container {
@@ -160,6 +163,21 @@ body {
 }
 .stat-description {
   color: var(--text);
+}
+.stat-item {
+  text-align: center;
+  position: relative;
+  flex: 1;
+}
+.stat-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 70%;
+  background-color: #ccc; /* Çizginin rengi */
 }
 
 /* our-services start */
@@ -601,6 +619,13 @@ body {
   color: #fff;
   background-color: var(--icon-color);
 }
+.ready .inputBox {
+  color: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+.ready .inputBox i {
+  color: rgba(255, 255, 255, 0.25);
+}
 .ready-icon {
   text-align: center;
   fill: var(--icon-color);
@@ -674,4 +699,19 @@ body {
 }
 .footer-copyright-link {
   color: var(--text);
+}
+
+.gotoback {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid;
+  color: var(--text);
+  bottom: 40px;
+  right: 50px;
+  text-align: center;
+  line-height: 40px;
+  transition: background-color 0s ease, color 0.3s ease;
 }
